@@ -1,8 +1,48 @@
+:root{
+  --theme: #c2185b;
+}
 .App {
-  text-align: center;
+  
 }
 
-.App-logo {
+body{
+  margin:0px;
+  padding:0px;
+}
+
+.nav-bar{
+  /* border:1px solid; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--theme);
+  padding:10px;
+}
+
+.mylogo{
+  display: flex;
+  flex: 1;
+}
+
+.nav-bar ul{
+  display: flex;
+  flex:1;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  
+}
+
+.nav-bar li {
+  /* margin-left: 10px; */
+}
+
+.nav-bar a{
+  text-decoration: none;
+  color: rgb(245, 245, 245);
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +75,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
