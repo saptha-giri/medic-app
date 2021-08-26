@@ -1,0 +1,91 @@
+.root-container {
+  display: flex;
+  /* flex: 1; */
+  /* justify-content: center; */
+  margin-top: 5px;
+}
+
+.left-split {
+  flex: 1;
+  /* border:1px solid red; */
+}
+
+.right-split {
+  flex: 1;
+  /* border:1px solid; */
+}
+.label-split {
+  flex: 1;
+  /* border:1px solid; */
+}
+.content-split {
+  display: flex;
+  flex: 3;
+}
+
+.position-container {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.medical-scan-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.mytable {
+  width: 95%;
+  border-collapse: collapse;
+}
+
+.mytable,
+td,
+th {
+  border: 2px solid #bfb1b1;
+}
+
+.mytable th {
+  background-color: #c2185b;
+  color: white;
+  height: 50px;
+}
+.mytable td {
+  height: 45px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="date"] {
+  height: 30px;
+  border: 1px solid;
+  padding-left: 3px;
+}
+
+button {
+  border: 1px solid;
+  width: 10%;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #c2185b;
+  color: white;
+}
+
+.table-search {
+  border-radius: 30px;
+}
+
+input:focus {
+  outline: none;
+}
+
+h3{
+  color: #c2185b;
+}
+
+select{
+  border-radius: 2px;
+  background-color: white;
+}

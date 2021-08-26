@@ -10,6 +10,7 @@ import {
 
 import CreateAppointment from "./pages/createAppointment/CreateAppointment";
 import ViewAppointment from "./pages/viewAppointment/ViewAppointment";
+import Billing from "./pages/Billing/Billing";
 
 import './App.css';
 
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route path="/view">
             <ViewAppointment />
+          </Route>
+          <Route path="/billing">
+            <Billing />
           </Route>
         </Switch>
       </div>

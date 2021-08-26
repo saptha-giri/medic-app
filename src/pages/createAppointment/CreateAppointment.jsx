@@ -1,92 +1,160 @@
 import React from "react";
-import './style.css';
+import '../styles/style.css';
 
 const CreateAppointment = () => {
     return (
-        <form className="root-container">
-            <div className="left-split">
+        <div className="position-container">
+            <h3>Patient Details</h3>
 
-                <div className="root-container">
-                    <div className="root-container left-split">
-                        <div className="label-split">
-                            <label>Patient name</label>
+            <div className="root-container">
+
+                <div className="left-split">
+                    <div className="root-container">
+                        <div className="root-container left-split">
+                            <div className="label-split">
+                                <label>Patient name</label>
+                            </div>
+                            <div className="content-split">
+                                <select name="mstatus" id="mstatus">
+                                    <option value="volvo">Mr</option>
+                                    <option value="saab">Mrs/Ms</option>
+                                </select>
+                                <input type="text" placeholder="" name="name" />
+                            </div>
                         </div>
-                        <div className="content-split">
-                            <select name="cars" id="cars">
-                                <option value="volvo">Mr</option>
-                                <option value="saab">Mrs/Ms</option>
-                            </select>
-                            <input type="text" />
+                        <div className="root-container right-split">
+                            <div className="label-split">
+                                <label>Gender</label>
+                            </div>
+                            <div className="content-split">
+                                <input type="radio" id="male" name="gender" value="male" />
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female" />
+                                <label for="female">Female</label>
+                            </div>
                         </div>
                     </div>
-                    <div className="root-container right-split">
-                        <div className="label-split">
-                            <label>Gender</label>
+
+
+                    <div className="root-container">
+                        <div className="root-container left-split">
+                            <div className="label-split">
+                                <label>DOB</label>
+                            </div>
+                            <div className="content-split">
+                                <input type="date" id="birthday" name="birthday" />
+                            </div>
                         </div>
-                        <div className="content-split">
-                            <input type="radio" id="age1" name="age" value="male" />
-                            <label for="age1">Male</label>
-                            <input type="radio" id="age2" name="age" value="female" />
-                            <label for="age2">Female</label>
+                        <div className="root-container right-split">
+                            <div className="label-split">
+                                <label>Age</label>
+                            </div>
+                            <div className="content-split">
+                                <input type="text" />
+                                <select name="cars" id="cars">
+                                    <option value="Year">Year</option>
+                                    <option value="Month">Month</option>
+                                    <option value="Day">Day</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
+
+
+                    <div className="root-container">
+                        <div className="root-container left-split">
+                            <div className="label-split">
+                                <label>Appointment Date</label>
+                            </div>
+                            <div className="content-split">
+                                <input type="date" id="birthday" name="birthday" />
+                            </div>
+                        </div>
+                        <div className="root-container right-split">
+                            <div className="label-split">
+                                <label>Phone No</label>
+                            </div>
+                            <div className="content-split">
+                                <input type="text" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="root-container">
+                        <div className="root-container left-split">
+                            <div className="label-split">
+                                <label>Address</label>
+                            </div>
+                            <div className="content-split" style={{ flex: 7, flexDirection: 'column', justifyContent: "space-between" }}>
+                                <input type="text" placeholder="Street Address" name="address1" style={{ marginBottom: "5px" }} />
+                                <input type="text" placeholder="Street Address2" name="address2" />
+                                <div className="root-container right-split">
+                                    <div className="label-split">
+                                        <input type="text" placeholder="city" name="city" />
+                                    </div>
+                                    <div className="content-split">
+                                        <input type="text" placeholder="state" name="state" />
+                                    </div>
+                                </div>
+                                <div className="root-container right-split">
+                                    <div className="label-split">
+                                        <input type="text" placeholder="Postal/Zip Code" />
+                                    </div>
+                                    <div className="content-split">
+                                        <select name="Country" id="cars">
+                                            <option value="Year">Year</option>
+                                            <option value="Month">Month</option>
+                                            <option value="Day">Day</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+                <div className="right-split">
 
-
-                <div className="root-container">
-                    <div className="root-container left-split">
-                        <div className="label-split">
-                            <label>DOB</label>
-                        </div>
-                        <div className="content-split">
-                            <input type="date" id="birthday" name="birthday" />
-                        </div>
-                    </div>
-                    <div className="root-container right-split">
-                        <div className="label-split">
-                            <label>Age</label>
-                        </div>
-                        <div className="content-split">
-                            <input type="text" />
-                            <select name="cars" id="cars">
-                                <option value="Year">Year</option>
-                                <option value="Month">Month</option>
-                                <option value="Day">Day</option>
-                            </select>
-                        </div>
-                    </div>
                 </div>
-
-
-                <div className="root-container">
-                    <div className="root-container left-split">
-                        <div className="label-split">
-                            <label>Appointment Date</label>
-                        </div>
-                        <div className="content-split">
-                            <input type="date" id="birthday" name="birthday" />
-                        </div>
-                    </div>
-                    <div className="root-container right-split">
-                        <div className="label-split">
-                            <label>Phone No</label>
-                        </div>
-                        <div className="content-split">
-                            <input type="text" />
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
 
             </div>
-            <div className="right-split">
 
+            <div>
+                <h3>Medical Scan Details</h3>
+                <div className="medical-scan-container">
+                    <label>Scan List</label>
+                    <input type="text" />
+                    <label>Scan Amount</label>
+                    <h3>250</h3>
+                    <label>Discount</label>
+                    <input type="text" />
+                    <button>Add</button>
+                </div>
+                <table className="mytable">
+                    <tr>
+                        <th>Sno</th>
+                        <th>Scan Name</th>
+                        <th>Scan Amount</th>
+                        <th>Discount</th>
+                        <th>Total Amount</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>CT Brain</td>
+                        <td>200</td>
+                        <td>10</td>
+                        <td>190</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>CT Brain</td>
+                        <td>200</td>
+                        <td>10</td>
+                        <td>190</td>
+                    </tr>
+                </table>
             </div>
-        </form>
+
+        </div>
     )
 }
 
