@@ -19,7 +19,7 @@ const CreateAppointment = () => {
                                     <option value="volvo">Mr</option>
                                     <option value="saab">Mrs/Ms</option>
                                 </select>
-                                <input type="text" placeholder="" name="name" />
+                                <input type="text" placeholder="" name="name" style={{width:"68%",marginLeft:"10px"}} />
                             </div>
                         </div>
                         <div className="root-container right-split">
@@ -42,7 +42,7 @@ const CreateAppointment = () => {
                                 <label>DOB</label>
                             </div>
                             <div className="content-split">
-                                <input type="date" id="birthday" name="birthday" />
+                                <input type="date" id="dob" name="dob" style={{width:"90%"}}/>
                             </div>
                         </div>
                         <div className="root-container right-split">
@@ -50,7 +50,7 @@ const CreateAppointment = () => {
                                 <label>Age</label>
                             </div>
                             <div className="content-split">
-                                <input type="text" />
+                                <input type="text" name="age" style={{width:"90%",marginRight:"10px"}}/>
                                 <select name="cars" id="cars">
                                     <option value="Year">Year</option>
                                     <option value="Month">Month</option>
@@ -67,7 +67,7 @@ const CreateAppointment = () => {
                                 <label>Appointment Date</label>
                             </div>
                             <div className="content-split">
-                                <input type="date" id="birthday" name="birthday" />
+                                <input type="date" id="date" name="ap_date" style={{width:"90%"}}/>
                             </div>
                         </div>
                         <div className="root-container right-split">
@@ -75,7 +75,7 @@ const CreateAppointment = () => {
                                 <label>Phone No</label>
                             </div>
                             <div className="content-split">
-                                <input type="text" />
+                                <input type="text" name="phoneno" style={{width:"98%"}}/>
                             </div>
                         </div>
                     </div>
@@ -89,18 +89,18 @@ const CreateAppointment = () => {
                                 <input type="text" placeholder="Street Address2" name="address2" />
                                 <div className="root-container right-split">
                                     <div className="label-split">
-                                        <input type="text" placeholder="city" name="city" />
+                                        <input type="text" placeholder="city" name="city" style={{width:"95%"}} />
                                     </div>
-                                    <div className="content-split">
-                                        <input type="text" placeholder="state" name="state" />
+                                    <div className="label-split">
+                                        <input type="text" placeholder="state" name="state" style={{width:"98%"}}/>
                                     </div>
                                 </div>
                                 <div className="root-container right-split">
                                     <div className="label-split">
-                                        <input type="text" placeholder="Postal/Zip Code" />
+                                        <input type="text" placeholder="Postal/Zip Code" style={{width:"95%"}}/>
                                     </div>
-                                    <div className="content-split">
-                                        <select name="Country" id="cars">
+                                    <div className="label-split">
+                                        <select name="Country" id="cars" style={{width:"100%",height:"100%"}}>
                                             <option value="Year">Year</option>
                                             <option value="Month">Month</option>
                                             <option value="Day">Day</option>
