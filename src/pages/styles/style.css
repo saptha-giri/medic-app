@@ -6,7 +6,7 @@
 }
 
 .left-split {
-  flex: 1;
+  flex: 2;
   /* border:1px solid red; */
 }
 
@@ -26,18 +26,27 @@
 .position-container {
   margin-top: 50px;
   margin-left: 50px;
+  margin-bottom: 100px;
 }
 
 .medical-scan-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 90%;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 .mytable {
   width: 95%;
   border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
 .mytable,
@@ -81,11 +90,24 @@ input:focus {
   outline: none;
 }
 
-h3{
+h3 {
   color: #c2185b;
 }
 
-select{
+select {
   border-radius: 2px;
   background-color: white;
+}
+
+.primary-btn {
+  color: #c2185b;
+  border: 1px solid #c2185b;
+  width:150px;
+  height:35px;
+  background-color: white;
+  font-size: medium;
+  font-weight: 800;
+  border-radius: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
 }

@@ -19,7 +19,9 @@ function App() {
     <Router>
       <div>
         <nav className="nav-bar">
-          <div className="mylogo"></div>
+          <div className="mylogo">
+            <h2>MEDIC APP</h2>
+          </div>
           <ul>
             <li>
               <Link to="/">Book Appointment</Link>

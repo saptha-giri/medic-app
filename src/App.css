@@ -22,11 +22,13 @@ body{
 .mylogo{
   display: flex;
   flex: 1;
+  color: white;
+  justify-content: center;
 }
 
 .nav-bar ul{
   display: flex;
-  flex:1;
+  flex:2;
   justify-content: space-around;
   align-items: center;
   list-style-type: none;

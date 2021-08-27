@@ -18,8 +18,8 @@ const ViewAppointment = () => {
                         <option value="saab">Mrs/Ms</option>
                     </select>
                     <label>Common Search</label>
-                    <input type="text" className="table-search" name="search" />
-                    <button>Search</button>
+                    <input type="text" placeholder="search" className="table-search" name="search" />
+                    <input type="button" onClick={()=>{}} value="search" className="primary-btn"/>
                 </div>
                 <table className="mytable">
                     <tr>
