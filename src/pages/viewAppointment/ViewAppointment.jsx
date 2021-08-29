@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../styles/style.css';
 
 const ViewAppointment = () => {
@@ -36,7 +37,7 @@ const ViewAppointment = () => {
                         <td>27-male</td>
                         <td>12-Feb-2020</td>
                         <td>190 INR</td>
-                        <td>Click to Pay</td>
+                        <td><Link to="/billing">Click to Pay</Link></td>
                     </tr>
                     <tr>
                         <td>2</td>
@@ -44,7 +45,7 @@ const ViewAppointment = () => {
                         <td>23-male</td>
                         <td>12-Feb-2020</td>
                         <td>240 INR</td>
-                        <td>Click to Pay</td>
+                        <td><Link to="/billing">Click to Pay</Link></td>
                     </tr>
                 </table>
             </div>
